@@ -1,0 +1,129 @@
+/* მთელი გვერდისთვის */
+body{
+    Background-color: hsl(30, 54%, 90%);      /*  ფონი */
+    Margin: 0;                                /* კიდეები */
+    Display: flex;                            /* Flexbox */
+    Flex-direction: column;                   /* ვერტიკალურად ჩალაგება */
+    Align-items: center;                      /* ჰორიზონტალურად ცენტრში */
+    Justify-content: center;                  /* ვერტიკალურად ცენტრში */
+    Font-family: Arial, sans-serif;           /* შრიფტი */
+    Padding: 40px 20px;
+    Min-height: 100vh;
+}
+
+/* ბარათი */
+.container{
+    Background-color: white;                  /* თეთრი  */
+    Padding: 35px;                            /* შიდა დაშორება */
+    Border-radius: 20px;                      /* მომრგვალებული კუთხეები */
+    Max-width: 650px;                         /* მაქსიმალური სიგანე */
+    Width: 100%;                              /* სრული სიგანე მობილურზე */
+}
+
+/* რეცეპტის სურათი */
+.recipe-image{
+    Width: 100%;                              /* სრული სიგანე */
+    Border-radius: 12px;                      /* მომრგვალებული კუთხეები */
+    Margin-bottom: 25px;                      /* დაშორება ქვემოთ */
+    Display: block;
+}
+
+/* მთავარი სათაური */
+h1{
+    Color: hsl(24, 5%, 18%);                  /* მუქი ტექსტი */
+    Font-size: 32px;                          /* ზომა */
+    Margin: 0 0 15px 0;                       /* დაშორება ქვემოთ */
+}
+
+/* ქვესათაურები */
+h2{
+    Color: hsl(14, 45%, 36%);                 /* feri */
+    Font-size: 24px;                          /* ზომა */
+    Margin: 25px 0 15px 0;                    /* დაშორება */
+}
+
+/* მომზადების დროის სათაური */
+.prep-time h3{
+    Color: hsl(332, 51%, 32%);                /* ფერი */
+    Font-size: 18px;                          /* ზომა */
+    Margin: 0 0 10px 0;
+}
+
+/* აღწერა */
+.description{
+    Color: hsl(30, 10%, 34%);                 /* ფერი */
+    Font-size: 15px;                          /* ზომა */
+    Line-height: 1.6;                         /* ხაზებს შორის დაშორება */
+    Margin: 0 0 20px 0;
+}
+
+/* მომზადების დროის ბლოკი (ვარდისფერი) */
+.prep-time{
+    Background-color: hsl(330, 100%, 98%);    /* ფერი */
+    Padding: 20px 25px;                       /* შიდა დაშორება */
+    Border-radius: 10px;                      /* მომრგვალებული კუთხეები */
+    Margin-bottom: 25px;                      /* დაშორება ქვემოთ */
+}
+
+/* სიები (ul) */
+ul{
+    Padding-left: 20px;                       /* დაშორება მარცხნივ */
+    Margin: 0;
+}
+
+ul li{
+    Color: hsl(30, 10%, 34%);                 /* ფერი */
+    Font-size: 15px;                          /* ზომა */
+    Line-height: 1.7;                         /* ხაზებს შორის დაშორება */
+}
+
+/* დანომრილი სია (ol) */
+ol{
+    Padding-left: 20px;                       /* დაშორება მარცხნივ */
+    Margin: 0;
+}
+
+ol li{
+    Color: hsl(30, 10%, 34%);                 /* ფერი */
+    Font-size: 15px;                          /* ზომა */
+    Line-height: 1.7;                         /* ხაზებს შორის დაშორება */
+    Margin-bottom: 10px;                      /* დაშორება ელემენტებს შორის */
+}
+
+/* მუქი ტექსტი სიებში */
+ul li strong,
+ol li strong{
+    Color: hsl(24, 5%, 18%);                  /* მუქი ტექსტი */
+}
+
+/* გამყოფი ხაზი */
+hr{
+    Border: none;                             /* სტანდარტული ჩარჩოს წაშლა */
+    Border-top: 1px solid hsl(30, 18%, 87%);  /* თხელი ნაცრისფერი ხაზი */
+    Margin: 30px 0;                           /* დაშორება ზემოთ და ქვემოთ */
+}
+
+/* ცხრილი */
+table{
+    Width: 100%;                              /* სრული სიგანე */
+    Border-collapse: collapse;                /* ორმაგი ხაზები ერთდება */
+}
+
+/* ცხრილის უჯრები */
+td{
+    Color: hsl(30, 10%, 34%);                 /* ფერი */
+    Font-size: 15px;                          /* ზომა */
+    Padding: 12px 0;                          /* შიდა დაშორება */
+    Border-bottom: 1px solid hsl(30, 18%, 87%); /* თხელი ხაზი ქვემოთ */
+}
+
+/* ცხრილის მნიშვნელობა (Calories, Carbs...) */
+td.value{
+    Color: hsl(14, 45%, 36%);                 /* ფერი */
+    Font-weight: bold;                        /* მუქი */
+}
+
+/* ბოლო სტრიქონს ხაზი არ ჰქონდეს */
+table tr:last-child td{
+    Border-bottom: none;
+}
